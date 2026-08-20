@@ -8,10 +8,16 @@ I love building things with technology, and I’m also willing to leave some of 
 
 ## What Does Brother Tech Do?
 
-BroTech currently focuses mainly on consumer-grade branded hardware routers, home networking, and stock Web admin interfaces. That includes per-device real-time network speeds, traffic statistics, network telemetry, browser userscripts, stock APIs, XHR and Fetch data interfaces, as well as NPU, hardware acceleration, Mesh, device-state detection, data sampling, and visualization: I hate flashing a branded hardware router with some other firmware. I’d much rather first see whether the system the manufacturer already built can still be put to good use.
+BroTech currently focuses on consumer-grade hardware routers, home networking, and OEM web UIs. This involves per-device real-time bandwidth monitoring, traffic accounting, network telemetry, browser userscripts, OEM APIs, and XHR/Fetch data interfaces. It also touches upon NPUs, hardware offloading, Mesh topologies, device state polling, data sampling, and visualization. I absolutely despise flashing consumer hardware routers with third-party firmware. Instead, I prefer to explore whether the OEM's stock system can be pushed to its limits and fully utilized first.
 
-There is no such thing as “flashing firmware” in my world. Don’t Flash that poor ROM; you’d be better off literally taking a brush and dusting it off. My dictionary contains only “system installation” and “system deployment.” So-called firmware is simply a fixed-in-place BIOS/UEFI.
+In my dictionary, the concept of "flashing" simply doesn't exist. Instead of flashing that pitiful ROM, you'd be better off taking a literal brush to dust off the motherboard. To me, there is only "OS installation" and "system deployment." "Firmware" strictly refers to hardcoded code like BIOS/UEFI.
 [The Ideal Gateway](https://zhuanlan.zhihu.com/p/2022428415328797037)
+
+I’m well aware this isn't an academically strict definition. Strictly speaking, system installation and deployment are similar—essentially the reverse process of system imaging/encapsulation. An image is merely a container; formats like WIM or ESD have absolutely zero relation to the actual deployment architecture used inside. And obviously, "firmware" encompasses more than just BIOS. What I'm really getting at is the distinction in how a device or computer operates as an integrated hardware-software appliance. Is the written image a monolithic, hardcoded blob that boots directly (not necessarily burned into a physical ROM)? Or does it require a complete unfolding of the Device Tree (DTB) and optimization for the specific runtime environment?
+
+Put simply: unless you are explicitly hacking firmware, the underlying OS—or the heavily customized UI running on top of it—should receive core feature upgrades via standard OTA/system updates, during which you generally cannot remove the installation media. Or to put it even more bluntly: when running a system update—ignoring physical side effects like CPU frequency spikes and thermal output—is there a direct logical causality or statistical probability that the update process will brick the device? (This is notoriously common on ARM platforms.)
+
+Bottom line: in everyday practice, anything that can be installed, deployed, and maintained like a standard operating system, I treat as an OS. I reserve the word "firmware" strictly for platform-layer code—like boot firmware—that lives entirely beneath the OS layer.
 
 Let the stock firmware keep handling the data plane it is good at. I tune the data at the Web management layer, preserve the stock NPU and hardware acceleration in full, and rebuild the admin interface into something better suited for people who genuinely want to see the data.
 

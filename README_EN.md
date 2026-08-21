@@ -1,4 +1,5 @@
-# BroTech 哥哥科技 Why Brother Tech?
+# BroTech 哥哥科技 Why Brother Tech? The Origin of name.
+[简体中文](README.md) | **English**
 
 Why is it called “哥哥科技”? Because I love my older brother and my younger brother. It’s that simple.
 
@@ -140,11 +141,11 @@ adding the NAT-type values, with 6 as the dividing line, is mathematically equiv
 
 ### When It Comes to Performance, What I Hate More Is Meaningless Work
 
-I don’t particularly like creating intermediate variables that are used exactly once just to make the “process look complete,” or, in other words: garbage variables—Wasteful Let.
+I don’t particularly like creating intermediate variables that are used exactly once just to make the “process look complete,” or, in other words: garbage variables—Wasteful Let. These are typically declared and used immediately, never to be used again, and offer no reusability—for example, converting bits to MiB by first creating a byte, or calculating a ratio by first declaring a `let` variable named `total`. On the other hand, variable caching that saves more than half the operations or eliminates 2-3 calculations is definitely worth it.
 
 **On “useless words”**: I don’t hate useless words at all. I would even say that it is precisely those so-called “useless words” that make us who we are.
 
-Besides, many LLMs have extremely high false-positive and false-negative rates when judging 「useless words」: the latter usually takes the form of the genuinely annoying, repetitive circular drivel that AI itself does not even realize it is producing.
+Furthermore, many LLMs have extremely high false positive and false negative rates when identifying “nonsense”: the latter typically consists of truly annoying “repetitive phrases” (Go round in circles / be repetitive / droning on) that the AI is unaware of.
 
 For example, if the final goal is merely to calculate one device’s share of a total, and the total will not change during the current cycle, the reciprocal can be calculated in advance and everything afterward can simply multiply by it; if a unit conversion ultimately amounts to multiplying by a fixed constant, there is no need to divide once, divide again, and then multiply everything back.
 
@@ -236,8 +237,8 @@ But the problem is that, as a wired-network fundamentalist, I’d go so far as t
 <details>
 <summary>Rule of Thumb: Wireless Should Never Go Beyond One Hop</summary><br>
 Don’t send a low-speed micro-EV onto the expressway. Build a double-decker interchange at home instead: put new phones on the 5.2G expressway with eight lanes and 160 MHz of bandwidth, put old phones and MiAI Smart speakers or Xiaomi AIoT on the 5.8G four-lane road with 80 MHz of bandwidth, and let the two coexist through traffic splitting.
+<br><br>“Under the physical-layer constraints of a conventional consumer wireless LAN, it is impossible for the effective payload of energy and data to be relayed losslessly through a single RF interface on the same channel without relying on a wired medium.”
 
-“Under the physical-layer constraints of a conventional consumer wireless LAN, it is impossible for the effective payload of energy and data to be relayed losslessly through a single RF interface on the same channel without relying on a wired medium.”
 “It is impossible to construct a network loop that uses only a single wireless RF interface as a relay without dumping large amounts of ‘waste heat’—ineffective airtime—into the surrounding channel and cutting effective bandwidth in half.”
 
 As long as the home is no larger than 150 square meters, its longest side is under 15 meters, and it is all on one floor, I would rather connect directly to the original 5G signal than use 2.4G or extend some fake “strong 5G signal.” Forget tri-band and wireless backhaul. Connect two ordinary routers with a 10 cm patch cable: a physically separated dual-router tri-band setup. Physics beats everything, or just use wired backhaul directly. Wired is routing fundamentalism in its purest form.
@@ -390,4 +391,4 @@ BroTech / 哥哥科技
 
 Code what matters.
 
-Because there is a 哥哥科技 born for an older brother, and built to serve a younger brother.
+Because there is a 哥哥 born for an older brother, and built to serve a younger brother.
